@@ -93,7 +93,7 @@
     if (_browserInfo.model === 'firefox') {
       _$cam[0].mozSrcObject = stream;
     } else {
-      _$cam.attr('src', window.URL.createObjectURL(stream));
+      _$cam[0].srcObject = stream;
     }
     _$cam[0].play();       
   }
